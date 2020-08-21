@@ -1,14 +1,14 @@
 # Minerva Project
 
-    Project created to display public projects saved in the user's github.
+<p>Project created to display public projects saved in the user's github.</p>
 
 # Technologies
 
-    HTML5, CSS, JavaScript
+<p>HTML5, CSS, JavaScript</p>
 
 ## Developer
 
-Marcelle Vargas – marcellecode@gmail.com
+<p>Marcelle Vargas – marcellecode@gmail.com</p>
 
 
 
