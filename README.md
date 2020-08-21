@@ -1,10 +1,10 @@
 # Minerva Project
 
-    <p>Project created to display public projects saved in the user's github.</p>
+    Project created to display public projects saved in the user's github.
 
 # Technologies
 
-    <p>HTML5, CSS, JavaScript</p>
+    HTML5, CSS, JavaScript
 
 ## Developer
 
