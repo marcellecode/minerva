@@ -51,10 +51,11 @@ h3 {
     background-color: white;
     width: 145px;
     height: 100%;
-    display: flex;
+    display: block;
     justify-content: center;
     flex-wrap: wrap;
     margin: 5px;
+    text-align: center;
 }
 
 .projects-cards .card .card-img {

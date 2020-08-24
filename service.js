@@ -9,35 +9,21 @@ const init = {
 fetch(url, init)
     .then((response) => response.json())
     .then(repos => {
-        repos.forEach(repo => {
-            //console.log(repo.name, repo.description)
-            // var node = document.createElement("h4");
-            // var textnode = document.createTextNode(repo.name);
-            // var node = document.createElement("h5");
-            // var textnode = document.createTextNode(repo.descript);
-            // node.appendChild(textnode);
-            // document.getElementById("repos").appendChild(node);
-            // var att = document.createAttribute("class");       // Create a "class" attribute
-            // att.value = "card";  
+        var containerRepos = document.getElementById("projectsCards");
+        repos.map(item => {
+            containerRepos.innerHTML+=`
+            <div class="card">
+                <img src="./assets/github-logo.png" alt="logo do github" class="card-img">
+                <div class="body-card">
+                    <div class="description-card">
+                        <h4>`+item.name+`</h4>
+                    </div>
+                    <div class="card-stars">
 
-            // var att = document.createAttribute("class");       // Create a "class" attribute
-            // att.value = "card";  
-            
-            var cards = document.createElement("div").setAttributeNode(att);
-            
-            var bodyCard = document.createElement("div").setAttributeNode("body-card");
-            var nameCard = document.createElement("h4")
-            var nameBodyCard = document.createTextNode(repo.name);
-
-            var descriptionCard = document.createElement("h5");
-            var descriptionBodyCard = document.createTextNode(repo.description);
-            
-            nameCard.appendChild(nameBodyCard);
-            descriptionCard.appendChild(descriptionBodyCard);
-            
-            cards.appendChild(nameCard).appendChild(descriptionCard);
-
-            document.getElementById("projects-cards").appendChild(cards);
-        });
+                    </div>
+                </div>
+            </div> 
+            `;
+        })
     })
     
