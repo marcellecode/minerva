@@ -11,19 +11,22 @@ fetch(url, init)
     .then(repos => {
         var containerRepos = document.getElementById("projectsCards");
         repos.map(item => {
-            containerRepos.innerHTML+=`
+            containerRepos.innerHTML += `
             <div class="card">
-                <img src="./assets/github-logo.png" alt="logo do github" class="card-img">
-                <div class="body-card">
-                    <div class="description-card">
-                        <h4>`+item.name+`</h4>
+
+            <img src="./assets/github-logo.png" alt="logo do github" class="card-img">
+            <div class="body-card">
+            <div class="description-card">
+            <h6 class="language">`+ item.language + `</h6>
+                        <h4>`+ item.name + `</h4>
+                        <h5>`+ item.description + `</h5>
                     </div>
                     <div class="card-stars">
-
+                        <h4>`+ item.stargazers_count + `</h4>
                     </div>
                 </div>
             </div> 
             `;
         })
     })
-    
+
