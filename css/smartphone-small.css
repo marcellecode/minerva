@@ -78,6 +78,7 @@ h3 {
     flex-flow: column;
     align-self: center;
     max-width: 150px;
+    width: calc(100% - 100px);
 }
 
 .projects-cards .card .body-card .description-card {
