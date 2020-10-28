@@ -14,7 +14,7 @@ fetch(url, init)
             containerRepos.innerHTML += `
             <div class="card">
 
-            <img src="./assets/github-logo.png" alt="logo do github" class="card-img">
+            <img src="./assets/img/github-logo.png" alt="logo do github" class="card-img">
             <div class="body-card">
             <div class="description-card">
             <h6 class="language">`+ item.language + `</h6>
